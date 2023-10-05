@@ -1,5 +1,6 @@
 # gabriele_k
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Playing War Game (Card Game):
 
@@ -15,3 +16,5 @@ Instructions:
 =======
 Hello, world
 >>>>>>> d8043b2f67c4e5b9c837a7c79c02537c72f1cb0e
+=======
+>>>>>>> b03205cab2007f8a1c9a88b2cab0817393775a2f
