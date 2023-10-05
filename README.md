@@ -1,4 +1,5 @@
 # gabriele_k
+<<<<<<< HEAD
 
 Playing War Game (Card Game):
 
@@ -11,3 +12,6 @@ Instructions:
 4. Each player gets 26 cards in a random order. 
 5. The program randomly selects which player is going first.
 6.  The player whose card is higher in value takes both cards
+=======
+Hello, world
+>>>>>>> d8043b2f67c4e5b9c837a7c79c02537c72f1cb0e
