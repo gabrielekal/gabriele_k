@@ -69,10 +69,20 @@ class WarGame:
             player1_card = self.player1.player_cards.pop(0)
             player2_card = self.player2.player_cards.pop(0)
             print(f"{self.player1.name} drew {player1_card[0]} of {player1_card[1]}.")
-
             print(f"{self.player2.name} drew {player2_card[0]} of {player2_card[1]}.")
 
-            
+            comparison_result = self.compare_cards(player1_card, player2_card)
+
+            if comparison_result == 1:
+                print(f"{self.player1.name} wins this round!")
+                self.player1.player_cards.extend([player1_card, player2_card])
+            elif comparison_result == 2:
+                print(f"{self.player2.name} wins this round!")
+                self.player2.player_cards.extend([player1_card, player2_card])
+            else:
+                print("It's a tie!")
+
+            print(f"Round {self.round}: {self.player1.name} - {len(self.player1.player_cards)} cards, {self.player2.name} - {len(self.player2.player_cards)} cards.")
 
 if __name__ == '__main__':
     game = WarGame()
