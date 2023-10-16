@@ -33,7 +33,16 @@ class WarGame:
 
     # Method compares two cards based on their ranks and returns the result
     def compare_cards(self, card1, card2):
-        ...
+        rank1 = self.ranks.index(card1[0])
+        rank2 = self.ranks.index(card2[0])
+        
+        if rank1 > rank2:
+            return 1  # Player1 wins
+        elif rank1 < rank2:
+            return 2  # Player2 wins
+        else:
+            return 0  # It's a tie
+
 
     def start_game(self):
         print("Welcome to the War Game!")
